@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:viewmodels="clr-namespace:Pet_Need_Notifier.ViewModels" x:DataType="viewmodels:Login_Info_ViewModel"
+             x:Class="Pet_Need_Notifier.Views.Login_Info">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry VerticalOptions="Center" x:Name="user_label" Margin="20"  Placeholder="Username" PlaceholderColor="Gray" />
+            <Entry VerticalOptions="Center" x:Name="pass_label" Margin="20" Placeholder="Password" PlaceholderColor="Gray" />
+            <Switch VerticalOptions="Center" x:Name="Keep_Logged_In"  Margin="20" IsToggled="False" />
+            <Button VerticalOptions="Center" Text="Login" Clicked="Log_In_Button"/>
+            <Button VerticalOptions="Center" Text="Sign Up" Clicked="Sign_Up_Button"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
