@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Pet Need Notifier": {
+      "commandName": "Project",
+      "sqlDebugging": true
+    }
+  }
+}

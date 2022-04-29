@@ -9,7 +9,7 @@
         <ResourceDictionary>
             <Color x:Key="Primary">#FFA500</Color>
             <Style TargetType="Button">
-                <Setter Property="TextColor" Value="#FFD580"></Setter>
+                <Setter Property="TextColor" Value="#FFFFFF"></Setter>
                 <Setter Property="VisualStateManager.VisualStateGroups">
                     <VisualStateGroupList>
                         <VisualStateGroup x:Name="CommonStates">

@@ -6,15 +6,26 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />  
-    <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
+    <PackageReference Include="MySqlConnector" Version="2.1.8" />
+    <PackageReference Include="Plugin.LocalNotification" Version="9.2.0" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2401" />  
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.2" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Views\Calendar.xaml">
+    <Compile Update="Views\Notfications.xaml.cs">
+      <DependentUpon>Notfications.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Views\Adder.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\Login_Info.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Notfications.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
